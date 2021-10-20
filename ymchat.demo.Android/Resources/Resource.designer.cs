@@ -7494,7 +7494,7 @@ namespace ymchat.demo.Droid
 			global::YmChat.Resource.Style.YmAppTheme_AppBarOverlay = global::ymchat.demo.Droid.Resource.Style.YmAppTheme_AppBarOverlay;
 			global::YmChat.Resource.Style.YmAppTheme_NoActionBar = global::ymchat.demo.Droid.Resource.Style.YmAppTheme_NoActionBar;
 			global::YmChat.Resource.Style.YmAppTheme_PopupOverlay = global::ymchat.demo.Droid.Resource.Style.YmAppTheme_PopupOverlay;
-			global::YmChat.Resource.Xml.file_paths = global::ymchat.demo.Droid.Resource.Xml.file_paths;
+			global::YmChat.Resource.Xml.yellow_chatbot_file_paths = global::ymchat.demo.Droid.Resource.Xml.yellow_chatbot_file_paths;
 		}
 		
 		public partial class Animation
@@ -19674,28 +19674,28 @@ namespace ymchat.demo.Droid
 		{
 			
 			// aapt resource value: 0x7F110000
-			public const int file_paths = 2131820544;
+			public const int image_share_filepaths = 2131820544;
 			
 			// aapt resource value: 0x7F110001
-			public const int image_share_filepaths = 2131820545;
+			public const int standalone_badge = 2131820545;
 			
 			// aapt resource value: 0x7F110002
-			public const int standalone_badge = 2131820546;
+			public const int standalone_badge_gravity_bottom_end = 2131820546;
 			
 			// aapt resource value: 0x7F110003
-			public const int standalone_badge_gravity_bottom_end = 2131820547;
+			public const int standalone_badge_gravity_bottom_start = 2131820547;
 			
 			// aapt resource value: 0x7F110004
-			public const int standalone_badge_gravity_bottom_start = 2131820548;
+			public const int standalone_badge_gravity_top_start = 2131820548;
 			
 			// aapt resource value: 0x7F110005
-			public const int standalone_badge_gravity_top_start = 2131820549;
+			public const int standalone_badge_offset = 2131820549;
 			
 			// aapt resource value: 0x7F110006
-			public const int standalone_badge_offset = 2131820550;
+			public const int xamarin_essentials_fileprovider_file_paths = 2131820550;
 			
 			// aapt resource value: 0x7F110007
-			public const int xamarin_essentials_fileprovider_file_paths = 2131820551;
+			public const int yellow_chatbot_file_paths = 2131820551;
 			
 			static Xml()
 			{

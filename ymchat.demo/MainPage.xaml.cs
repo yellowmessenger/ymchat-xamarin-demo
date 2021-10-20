@@ -25,7 +25,7 @@ namespace ymchat.demo
             string botId = "x1597301712805";//bot ID
             _ymChatInterface.setBotId(botId);//Setting the BOTId
             _ymChatInterface.setEnableSpeech(true);//Enabling the Speech to text Button
-            _ymChatInterface.setEnableHistory(true);//Enabling Chat History
+            _ymChatInterface.setVersion(2);//Enabling Chat History
             _ymChatInterface.showCloseButton(true);//Showing the Close Button
             _ymChatInterface.setPayLoad(Payload);//setting the payload 
             _ymChatInterface.onEventFromBot((botEvent) =>
