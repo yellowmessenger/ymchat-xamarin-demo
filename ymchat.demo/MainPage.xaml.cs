@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using YmChat;
 
@@ -21,19 +17,40 @@ namespace ymchat.demo
             Console.WriteLine("Xamarin Forms started");
             var Payload = new Dictionary<string, object> { { "Name ", "Ym" } };
 
+            // Getting refernce
             _ymChatInterface = ymChatInterface;
-            string botId = "x1597301712805";//bot ID
-            _ymChatInterface.setBotId(botId);//Setting the BOTId
-            _ymChatInterface.setEnableSpeech(true);//Enabling the Speech to text Button
-            _ymChatInterface.setVersion(2);//Enabling Chat History
-            _ymChatInterface.showCloseButton(true);//Showing the Close Button
-            _ymChatInterface.setPayLoad(Payload);//setting the payload 
+
+            string botId = "x1597301712805";
+
+            // Setting the bOTId
+            _ymChatInterface.setBotId(botId);
+
+            // Enabling the Speech to text button
+            _ymChatInterface.setEnableSpeech(true);
+
+            // Enabling Chat History
+            _ymChatInterface.setVersion(2);
+
+            // Showing the Close Button
+            _ymChatInterface.showCloseButton(true);
+
+            // Setting the payload
+            _ymChatInterface.setPayLoad(Payload);
+
+            // Setting close button color with hex code
+            _ymChatInterface.setCloseButtonColor("#FFFFFF");
+
+            // Setting statubar button color with hex code
+            _ymChatInterface.setStatusBarColor("#000000");
+
+            // Listening to bot events
             _ymChatInterface.onEventFromBot((botEvent) =>
             {
                 Console.WriteLine(botEvent["code"]);
                 Console.WriteLine(botEvent["data"]);
             });
 
+            // Listening to close bot event
             _ymChatInterface.onBotClose(() =>
             {
                 Console.WriteLine("Chatbot closed");
@@ -41,14 +58,13 @@ namespace ymchat.demo
 
 
             InitializeComponent();
-            
-
 
         }
 
         void OnButtonClick(object sender, EventArgs e)
         {
-            _ymChatInterface.startChatBot();// starting the bot
+            // starting the bot
+            _ymChatInterface.startChatBot();
         }
 
 
